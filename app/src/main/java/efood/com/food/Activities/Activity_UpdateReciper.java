@@ -319,10 +319,10 @@ public class Activity_UpdateReciper extends AppCompatActivity implements View.On
             edtQuantity = (MaterialEditText) (v1.getChildAt(1));
             spUnit = (Spinner) (v2.getChildAt(0));
             if (TextUtils.isEmpty(edttitle.getText() + "")) {
-                edttitle.setError("Giá trị rổng");
+                edttitle.setError("Giá trị rỗng");
                 return false;
             } else if (TextUtils.isEmpty(edtQuantity.getText() + "")) {
-                edtQuantity.setError("Giá trị rổng");
+                edtQuantity.setError("Giá trị rỗng");
                 return false;
             } else if ((spUnit.getSelectedItem().toString()).trim().equals("đơn vị")) {
                 Snackbar.make(spUnit, "Bạn chưa chọn đơn vị", Snackbar.LENGTH_SHORT).show();
