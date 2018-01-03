@@ -71,15 +71,15 @@ public class Activity_UpdateReciper extends AppCompatActivity implements View.On
     Reciper reciper;
 
     public void UpdateAll() {
-        if (st(edt_title).trim().equals("")) edt_title.setError("chưa có gía trị");
-        else if (st(edt_preTime).trim().equals("")) edt_preTime.setError("chưa có gía trị");
-        else if (st(edt_timecook).trim().equals("")) edt_timecook.setError("chưa có gía trị");
-        else if (st(edt_serving).trim().equals("")) edt_serving.setError("chưa có gía trị");
+        if (st(edt_title).trim().equals("")) edt_title.setError("Chưa có gía trị");
+        else if (st(edt_preTime).trim().equals("")) edt_preTime.setError("Chưa có gía trị");
+        else if (st(edt_timecook).trim().equals("")) edt_timecook.setError("Chưa có gía trị");
+        else if (st(edt_serving).trim().equals("")) edt_serving.setError("Chưa có gía trị");
         else if (mAutoLabel.getChildCount() <= 0)
-            Snackbar.make(body, "chưa có thành phần", Snackbar.LENGTH_SHORT).show();
+            Snackbar.make(body, "Chưa có thành phần!", Snackbar.LENGTH_SHORT).show();
         else if (!Check()) ;
         else if ((body.getText() + "").trim().equals(""))
-            Snackbar.make(body, "chưa có Hướng dẩn", Snackbar.LENGTH_SHORT).show();
+            Snackbar.make(body, "Chưa có hướng dẫn", Snackbar.LENGTH_SHORT).show();
         else {
             Reciper r = new Reciper();
             r.setPrep_time(Integer.parseInt(st(edt_preTime)));

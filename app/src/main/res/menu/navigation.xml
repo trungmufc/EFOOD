@@ -10,7 +10,7 @@
         <item
             android:id="@+id/item_navigation_drawer_starred"
             android:icon="@mipmap/ic_launcher"
-            android:title="thêm thực đơn" />
+            android:title="Thêm thực đơn" />
         <item
             android:id="@+id/item_navigation_drawer_sent_mail"
             android:icon="@mipmap/ic_launcher"
@@ -27,7 +27,7 @@
             <item
                 android:id="@+id/item_navigation_drawer_help_and_feedback"
                 android:icon="@mipmap/ic_launcher"
-                android:title="Help and feedback" />
+                android:title="Trợ giúp" />
         </menu>
     </item>
 </menu>
