@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/item_navigation_drawer_inbox"
+            android:checked="true"
+            android:icon="@mipmap/ic_launcher"
+            android:title="Lên lịch món ăn" />
+        <item
+            android:id="@+id/item_navigation_drawer_starred"
+            android:icon="@mipmap/ic_launcher"
+            android:title="thêm thực đơn" />
+        <item
+            android:id="@+id/item_navigation_drawer_sent_mail"
+            android:icon="@mipmap/ic_launcher"
+            android:title="Lịch sử" />
+
+    </group>
+
+    <item android:title="Cài đăt">
+        <menu>
+            <item
+                android:id="@+id/item_notification_drawer_settings"
+                android:icon="@mipmap/ic_launcher"
+                android:title="Thông báo" />
+            <item
+                android:id="@+id/item_navigation_drawer_help_and_feedback"
+                android:icon="@mipmap/ic_launcher"
+                android:title="Help and feedback" />
+        </menu>
+    </item>
+</menu>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:ad="http://schemas.android.com/apk/res-auto"
+    android:background="#eee"
+    android:orientation="vertical">
+    <FrameLayout
+        android:id="@+id/contentPanel"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/fab"
+            ad:fab_colorNormal="@color/primary"
+            ad:fab_colorPressed="@color/primary_dark"
+            ad:fab_colorRipple="@color/md_green_500_25"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|right"
+            android:layout_marginBottom="8dp"
+            android:layout_marginRight="8dp"
+            android:src="@drawable/ic_actionplus" />
+
+    </FrameLayout>
+
+    <!--<TextView-->
+    <!--android:id="@+id/tv_date_label"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:gravity="center_horizontal"-->
+    <!--android:textColor="#ffff3f49"-->
+    <!--android:textSize="20sp" />-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/tv_position_label"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginTop="20dp"-->
+    <!--android:gravity="center_horizontal"-->
+    <!--android:textColor="#ffff3f49"-->
+    <!--android:textSize="16sp" />-->
+
+</LinearLayout>

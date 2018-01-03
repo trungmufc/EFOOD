@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:id="@+id/item"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <com.vipul.hp_hp.timelineview.TimelineView
+        android:id="@+id/time_marker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="60dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="30dp"
+        app:line="#607D8B"
+        app:line_size="2dp"
+        app:marker_size="25dp" />
+
+    <android.support.v7.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="#fff"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:orientation="vertical"
+        app:cardUseCompatPadding="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/itemreciper"
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:layout_margin="16dp"
+                android:src="@drawable/changer_coloricon" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_alignTop="@+id/itemreciper"
+                android:layout_marginRight="16dp"
+                android:layout_toEndOf="@+id/itemreciper"
+                android:layout_toRightOf="@+id/itemreciper"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txtitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-medium"
+                    android:singleLine="true"
+                    android:text="New Text"
+                    android:textColor="@color/primary_dark"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/txtTimeTotal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-medium"
+                    android:padding="4dp"
+                    android:singleLine="true"
+                    android:text="New Text"
+                    android:textColor="#9E9E9E"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <!--<View-->
+        <!--android:id="@+id/selected_overlay"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:background="@color/md_green_500_50"-->
+        <!--android:visibility="invisible" />-->
+
+    </android.support.v7.widget.CardView>
+
+
+</LinearLayout>

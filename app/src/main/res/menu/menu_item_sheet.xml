@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--<menu xmlns:android="http://schemas.android.com/apk/res/android">-->
+    <item
+        android:id="@+id/Update"
+        android:icon="@drawable/ic_action_update"
+        android:title="Cập nhật" />
+    <item
+        android:id="@+id/Delete"
+        android:icon="@drawable/ic_action_delete"
+        android:title="Xóa" />
+
+    <group android:id="@+id/helpgroup">
+        <item
+            android:id="@+id/Cancel"
+            android:icon="@drawable/ic_action_cancel"
+            android:title="Hủy" />
+    </group>
+    <!--</menu>-->
+</menu>

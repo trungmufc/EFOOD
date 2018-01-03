@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="efood.com.food">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity" />
+        <activity android:name=".Activities.Activity_Flash">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!--<receiver android:name=".Alam.AlamReserver">-->
+        <!--<intent-filter>-->
+        <!--&lt;!&ndash;<action android:name="android.intent.action.TIME_SET" />&ndash;&gt;-->
+        <!--&lt;!&ndash;<action android:name="android.intent.action.DATE_SET" />&ndash;&gt;-->
+        <!--</intent-filter>-->
+        <!--</receiver>-->
+
+        <!--<receiver-->
+        <!--android:name=".Alam.BootReserver"-->
+        <!--android:enabled="false">-->
+        <!--<intent-filter>-->
+        <!--<action android:name="android.intent.action.BOOT_COMPLETED" />-->
+        <!--</intent-filter>-->
+        <!--</receiver>-->
+        <!--<service-->
+        <!--android:name=".Alam.Demo.AlarmService"-->
+        <!--android:enabled="true" />-->
+        <!--<receiver android:name=".Alam.Demo.Receiver" />-->
+        <!--<service android:name=".Alam.SchedureService" />-->
+
+        <service
+            android:name=".Alam.Demo.AlarmService"
+            android:enabled="true" />
+
+        <receiver android:name=".Alam.Demo.Receiver" />
+        <receiver
+            android:name=".Alam.Demo.BReserver"
+            android:enabled="false">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"></action>
+            </intent-filter>
+        </receiver>
+
+        <activity android:name=".Activities.Activity_AddReciper" />
+        <activity android:name=".Activities.Activity_Ingredients" />
+        <activity android:name=".Activities.Activity_CategoryDetails" />
+        <activity android:name=".Activities.Activity_ReciperDetails" />
+        <activity android:name=".Activities.Activity_AddSchedules" />
+        <activity android:name=".Activities.Activity_Note" />
+        <activity android:name=".Activities.Activity_Setting" />
+        <activity android:name=".Activities.Activity_UpdateReciper" />
+        <!-- <activity android:name=".Activities.Notification"></activity> -->
+    </application>
+    <uses-permission android:name="android.permission.VIBRATE" />
+</manifest>

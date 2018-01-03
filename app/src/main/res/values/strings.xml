@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">eFood</string>
+    <string name="your_string_here">This is an <u>underline</u>.</string>
+</resources>

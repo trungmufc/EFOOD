@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="MaterialSearchView">
+        <attr name="searchBackground" format="integer" />
+        <attr name="searchVoiceIcon" format="integer" />
+        <attr name="searchCloseIcon" format="integer" />
+        <attr name="searchBackIcon" format="integer" />
+        <attr name="searchSuggestionBackground" format="integer" />
+        <attr name="android:hint" />
+        <attr name="android:textColor" />
+        <attr name="android:textColorHint" />
+    </declare-styleable>
+    <color name="search_layover_bg">#CCCCCC</color>
+    <dimen name="search_icon_padding">12dp</dimen>
+    <dimen name="search_view_text_padding">65dp</dimen>
+
+    <string name="search_hint">Search&#8230;</string>
+
+    <string-array name="state_array_full">
+        <item>Armed Forces Americas</item>
+        <item>Armed Forces Others</item>
+        <item>Alabama</item>
+        <item>Alaska</item>
+        <item>Armed Forces Pacific</item>
+        <item>Arkansas</item>
+        <item>Arizona</item>
+        <item>California</item>
+        <item>Colorado</item>
+        <item>Connecticut</item>
+        <item>District Of Columbia</item>
+        <item>Delaware</item>
+        <item>Florida</item>
+        <item>Georgia</item>
+        <item>Hawaii</item>
+        <item>Iowa</item>
+        <item>Idaho</item>
+        <item>Illinois</item>
+        <item>Indiana</item>
+        <item>Kansas</item>
+        <item>Kentucky</item>
+        <item>Louisiana</item>
+        <item>Massachusetts</item>
+        <item>Maryland</item>
+        <item>Maine</item>
+        <item>Michigan</item>
+        <item>Minnesota</item>
+        <item>Missouri</item>
+        <item>Mississippi</item>
+        <item>Montana</item>
+        <item>North Carolina</item>
+        <item>North Dakota</item>
+        <item>Nebraska</item>
+        <item>New Hampshire</item>
+        <item>New Jersey</item>
+        <item>New Mexico</item>
+        <item>Nevada</item>
+        <item>New York</item>
+        <item>Ohio</item>
+        <item>Oklahoma</item>
+        <item>Oregon</item>
+        <item>Pennsylvania</item>
+        <item>Puerto Rico</item>
+        <item>Rhode Island</item>
+        <item>South Carolina</item>
+        <item>South Dakota</item>
+        <item>Tennessee</item>
+        <item>Texas</item>
+        <item>Utah</item>
+        <item>Virginia</item>
+        <item>Vermont</item>
+        <item>Washington</item>
+        <item>Wisconsin</item>
+        <item>West Virginia</item>
+        <item>Wyoming</item>
+    </string-array>
+
+    <!--dimens.xml-->
+    <string name="hint_prompt">Speak an item name or number</string>
+    <string name="cross">Cross</string>
+    <declare-styleable name="LabelsView">
+        <attr name="max_labels" format="integer" />
+        <attr name="show_cross" format="boolean" />
+        <attr name="icon_cross" format="reference" />
+        <attr name="text_color" format="color" />
+        <attr name="text_size" format="dimension" />
+        <attr name="background_color" format="color" />
+        <attr name="label_clickable" format="boolean" />
+    </declare-styleable>
+    <color name="default_background_label">#607D8B</color>
+    <dimen name="icon_cross">23dp</dimen>
+    <dimen name="label_title_size">16sp</dimen>
+    <dimen name="padding_label_view">10dp</dimen>
+    <dimen name="margin_between_labels">3dp</dimen>
+    <dimen name="padding_icon_cross">5dp</dimen>
+</resources>

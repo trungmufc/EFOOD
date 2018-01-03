@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/item_meal"
+        android:icon="@drawable/ic_brightness_5_white_36dp"
+        android:title="meal"
+        app:showAsAction="always">
+        <menu>
+            <item
+                android:id="@+id/item_breakfast"
+                android:title="Bửa Sáng"
+                app:showAsAction="always" />
+            <item
+                android:id="@+id/item_lund"
+                android:title="Bửa Trưa"
+                app:showAsAction="always" />
+            <item
+                android:id="@+id/item_dinner"
+                android:title="Bửa Tối"
+                app:showAsAction="always" />
+            <item
+                android:id="@+id/item_Snacks"
+                android:title="Ăn Vặt"
+                app:showAsAction="always" />
+        </menu>
+    </item>
+
+</menu>

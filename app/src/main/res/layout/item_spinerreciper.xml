@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    app:cardUseCompatPadding="true"
+    android:foreground="?android:attr/selectableItemBackground"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/itemreciper"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:src="@drawable/changer_coloricon"
+            android:layout_margin="16dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_alignTop="@+id/itemreciper"
+            android:layout_marginRight="16dp"
+            android:layout_toEndOf="@+id/itemreciper"
+            android:layout_toRightOf="@+id/itemreciper"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txtitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-medium"
+                android:text="New Text"
+                android:textColor="@color/primary_dark"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/txtTimeTotal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-medium"
+                android:padding="4dp"
+                android:text="New Text"
+
+                android:textSize="14sp" />
+            <!--android:textColor="#9E9E9E"-->
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+    <!--<View-->
+        <!--android:id="@+id/selected_overlay"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:background="@color/md_green_500_50"-->
+        <!--android:visibility="invisible" />-->
+
+
+</LinearLayout>
